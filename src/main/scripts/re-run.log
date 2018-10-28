@@ -1,0 +1,62 @@
+[INFO]	Thu Oct 25 15:25:29 2018	Processing SRR7971416
+
+[INFO]	Thu Oct 25 15:25:29 2018	Downloading FASTQ file	/home/anand/Downloads/sratoolkit.2.9.2-ubuntu64/bin/fastq-dump SRR7971416 -O /home/anand/Documents/preProcessing_results//SRR7971416
+
+
+[INFO]	Thu Oct 25 15:25:29 2018	Starting adapter removal	java -jar /home/anand/Downloads/Trimmomatic-0.38/trimmomatic-0.38.jar SE -phred33 /home/anand/Documents/preProcessing_results//SRR7971416/SRR7971416.fastq /home/anand/Documents/preProcessing_results//SRR7971416/SRR7971416.AT.fastq ILLUMINACLIP:/home/anand/Downloads/Trimmomatic-0.38/adapters/TruSeq3-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
+
+
+[INFO]	Thu Oct 25 15:25:29 2018	Collapsing reads from /home/anand/Documents/preProcessing_results//SRR7971416/SRR7971416.AT.fastq
+
+
+[INFO]	Thu Oct 25 15:26:40 2018	Output generated: /home/anand/Documents/preProcessing_results//SRR7971416/SRR7971416.AT.COL.fa
+
+[INFO]	Thu Oct 25 15:26:40 2018	Processing SRR7971417
+
+[INFO]	Thu Oct 25 15:26:40 2018	Downloading FASTQ file	/home/anand/Downloads/sratoolkit.2.9.2-ubuntu64/bin/fastq-dump SRR7971417 -O /home/anand/Documents/preProcessing_results//SRR7971417
+
+
+[INFO]	Thu Oct 25 15:26:40 2018	Starting adapter removal	java -jar /home/anand/Downloads/Trimmomatic-0.38/trimmomatic-0.38.jar SE -phred33 /home/anand/Documents/preProcessing_results//SRR7971417/SRR7971417.fastq /home/anand/Documents/preProcessing_results//SRR7971417/SRR7971417.AT.fastq ILLUMINACLIP:/home/anand/Downloads/Trimmomatic-0.38/adapters/TruSeq3-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
+
+
+[INFO]	Thu Oct 25 15:26:40 2018	Collapsing reads from /home/anand/Documents/preProcessing_results//SRR7971417/SRR7971417.AT.fastq
+
+
+[INFO]	Thu Oct 25 15:28:14 2018	Output generated: /home/anand/Documents/preProcessing_results//SRR7971417/SRR7971417.AT.COL.fa
+
+[INFO]	Thu Oct 25 15:28:14 2018	Processing SRR7971418
+
+[INFO]	Thu Oct 25 15:28:14 2018	Downloading FASTQ file	/home/anand/Downloads/sratoolkit.2.9.2-ubuntu64/bin/fastq-dump SRR7971418 -O /home/anand/Documents/preProcessing_results//SRR7971418
+
+
+[INFO]	Thu Oct 25 15:28:14 2018	Starting adapter removal	java -jar /home/anand/Downloads/Trimmomatic-0.38/trimmomatic-0.38.jar SE -phred33 /home/anand/Documents/preProcessing_results//SRR7971418/SRR7971418.fastq /home/anand/Documents/preProcessing_results//SRR7971418/SRR7971418.AT.fastq ILLUMINACLIP:/home/anand/Downloads/Trimmomatic-0.38/adapters/TruSeq3-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
+
+
+[INFO]	Thu Oct 25 15:28:14 2018	Collapsing reads from /home/anand/Documents/preProcessing_results//SRR7971418/SRR7971418.AT.fastq
+
+
+[INFO]	Thu Oct 25 15:29:41 2018	Output generated: /home/anand/Documents/preProcessing_results//SRR7971418/SRR7971418.AT.COL.fa
+
+[INFO]	Thu Oct 25 15:29:41 2018	Processing SRR7971419
+
+[INFO]	Thu Oct 25 15:29:41 2018	Downloading FASTQ file	/home/anand/Downloads/sratoolkit.2.9.2-ubuntu64/bin/fastq-dump SRR7971419 -O /home/anand/Documents/preProcessing_results//SRR7971419
+
+
+[INFO]	Thu Oct 25 15:29:41 2018	Starting adapter removal	java -jar /home/anand/Downloads/Trimmomatic-0.38/trimmomatic-0.38.jar SE -phred33 /home/anand/Documents/preProcessing_results//SRR7971419/SRR7971419.fastq /home/anand/Documents/preProcessing_results//SRR7971419/SRR7971419.AT.fastq ILLUMINACLIP:/home/anand/Downloads/Trimmomatic-0.38/adapters/TruSeq3-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
+
+
+[INFO]	Thu Oct 25 15:29:41 2018	Collapsing reads from /home/anand/Documents/preProcessing_results//SRR7971419/SRR7971419.AT.fastq
+
+
+[INFO]	Thu Oct 25 15:31:01 2018	Output generated: /home/anand/Documents/preProcessing_results//SRR7971419/SRR7971419.AT.COL.fa
+
+[INFO]	Thu Oct 25 15:31:01 2018	Processing SRR7971420
+
+[INFO]	Thu Oct 25 15:31:01 2018	Downloading FASTQ file	/home/anand/Downloads/sratoolkit.2.9.2-ubuntu64/bin/fastq-dump SRR7971420 -O /home/anand/Documents/preProcessing_results//SRR7971420
+
+
+[INFO]	Thu Oct 25 15:31:01 2018	Starting adapter removal	java -jar /home/anand/Downloads/Trimmomatic-0.38/trimmomatic-0.38.jar SE -phred33 /home/anand/Documents/preProcessing_results//SRR7971420/SRR7971420.fastq /home/anand/Documents/preProcessing_results//SRR7971420/SRR7971420.AT.fastq ILLUMINACLIP:/home/anand/Downloads/Trimmomatic-0.38/adapters/TruSeq3-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
+
+
+[INFO]	Thu Oct 25 15:31:01 2018	Collapsing reads from /home/anand/Documents/preProcessing_results//SRR7971420/SRR7971420.AT.fastq
+

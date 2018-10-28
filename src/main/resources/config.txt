@@ -1,0 +1,4 @@
+tRNA_Ref	/home/anand/Documents/code/src/main/resources/hg19-tRNAs/hg19-tRNAs.fa
+Codon_tab	/home/anand/Documents/code/src/main/resources/codon_mapping_table.txt
+SRA_AccList	/home/anand/Documents/code/src/main/resources/SraAccList.txt
+Out_Dir	/home/anand/Documents/code/src/main/test

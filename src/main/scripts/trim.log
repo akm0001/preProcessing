@@ -1,0 +1,12 @@
+TrimmomaticSE: Started with arguments:
+ -phred33 /home/anand/Documents/SRR7971416.fastq /home/anand/Documents//SRR7971416.trimmed.fq.gz ILLUMINACLIP:/home/anand/Downloads/Trimmomatic-0.38/adapters/TruSeq2-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
+Automatically using 4 threads
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGGTTCAGCAGGAATGCCGAG'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCTCGTATGCCGTCTTCTGCTTG'
+ILLUMINACLIP: Using 0 prefix pairs, 3 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 17311652 Surviving: 17294557 (99.90%) Dropped: 17095 (0.10%)
+TrimmomaticSE: Completed successfully
+real 208.16
+user 244.39
+sys 3.42
