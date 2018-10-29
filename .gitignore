@@ -1,3 +1,4 @@
 *.log
 *.swp
 SraAccList.50.txt
+src/main/test/results.out
