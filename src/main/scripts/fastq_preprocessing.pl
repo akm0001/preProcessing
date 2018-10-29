@@ -36,10 +36,13 @@ system("$exec_trimmomatic");
 print "\n#### [INFO]\t",scalar(localtime()),"\tCollapsing reads from $trimmedFastq\n\n";
 my $fastxLog=`$exec_fastx`;
 
+#Input: 17285750 sequences (representing 17285750 reads)
+#Output: 3873883 sequences (representing 17285750 reads)
+
 my $totalSequences=0;
 $fastxLog=~ s/\n/\|/g;
 my ($log1,$log2)= split(/\|/,$fastxLog);
-my @logSplit=split(/\s/,$log2);
+my @logSplit=split(/\s/,$log1);
 $totalSequences=$logSplit[1];
 ##$trimmedCollapsedTemp="$outDir/$sra_acc/SRR7971416.trimmed.collapsed.fastq";
 

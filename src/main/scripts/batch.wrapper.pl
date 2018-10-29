@@ -30,6 +30,7 @@ print "#### [INFO] ", scalar localtime (),"\t#CONFIG#\t$config\n";
 open (SRA, "$sra_AccList") or die "#### [ERROR]\t",scalar(localtime()),"\tcan't open the file with SRA accession IDs\n";
 while (my $sraID=<SRA>){
 	chomp $sraID;
+	if ($sraID=~ /^#/) { next; }
 	my $processCmd="perl $scriptDir/fastq_preprocessing.pl $sraID $outDir $fastqDump $trimmomatic $adapters";
 	print "#### [INFO] ", scalar localtime (),"\t#SCRIPT#\t$processCmd\n";
 	system ("$processCmd");

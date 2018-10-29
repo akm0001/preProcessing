@@ -2,3 +2,4 @@
 *.swp
 SraAccList.50.txt
 src/main/test/results.out
+src/main/test/old.blast.results.SRR7971416.out
