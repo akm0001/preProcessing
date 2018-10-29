@@ -6,11 +6,11 @@ my $scriptDir=$Bin;
 my $config=$ARGV[0];
 
 if (!$config){
-	print "[ERROR]\t",scalar(localtime()),"\tUsage: perl batch.wrapper.pl /home/anand/Documents/preProcessing/src/main/resources/wrapper.config.txt\n";
+	print "#### [ERROR]\t",scalar(localtime()),"\tUsage: perl batch.wrapper.pl /home/anand/Documents/preProcessing/src/main/resources/wrapper.config.txt\n";
 	exit;
         }
 
-open (CONF,"$config") or die "[ERROR]\t",scalar(localtime()),"\tCan't open the config file\n";
+open (CONF,"$config") or die "#### [ERROR]\t",scalar(localtime()),"\tCan't open the config file\n";
 
 my($sra_AccList,$outDir,$fastqDump,$trimmomatic,$adapters)=();
 
