@@ -1,0 +1,5 @@
+SRA_AccList	/home/anand/Documents/preProcessing/src/main/resources/SraAccList.50.txt
+Out_Dir	/home/anand/Documents/wrapper_res
+Fastq-dump	/home/anand/Downloads/sratoolkit.2.9.2-ubuntu64/bin/fastq-dump
+Trimmomatic	/home/anand/Downloads/Trimmomatic-0.38/trimmomatic-0.38.jar
+Adapters	/home/anand/Downloads/Trimmomatic-0.38/adapters/TruSeq3-SE.fa

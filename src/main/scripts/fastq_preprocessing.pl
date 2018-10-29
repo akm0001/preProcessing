@@ -14,7 +14,7 @@ if ((!$sra_acc)||(!$outDir)||(!$fastq_dump)||(!$trimmomatic)||(!$adapters)){
 	}
 
 my $trimmedFastq="$outDir/$sra_acc/$sra_acc.AT.fastq";
-#my $trimmedFastq="$outDir/$sra_acc/$sra_acc.TEMP.fastq";
+##my $trimmedFastq="$outDir/$sra_acc/$sra_acc.TEMP.fastq";
 my $trimmedCollapsedTemp="$outDir/$sra_acc/$sra_acc.AT.COL.TEMP.fa";
 my $trimmedCollapsedReHead="$outDir/$sra_acc/$sra_acc.AT.COL.fa";
 
@@ -27,14 +27,13 @@ print "[INFO]\t",scalar(localtime()),"\tProcessing $sra_acc\n\n";
 system("$createWD");
 
 print "[INFO]\t",scalar(localtime()),"\tDownloading FASTQ file\t$exec_fastqDump\n\n";
-#system("$exec_fastqDump");
+system("$exec_fastqDump");
 
 print "\n[INFO]\t",scalar(localtime()),"\tStarting adapter removal\t$exec_trimmomatic\n\n";
-#system("$exec_trimmomatic");
+system("$exec_trimmomatic");
 
 ##print "[INFO]\t",scalar(localtime()),"\t$exec_fastx\n";
 print "\n[INFO]\t",scalar(localtime()),"\tCollapsing reads from $trimmedFastq\n\n";
-#system("$exec_fastx");
 my $fastxLog=`$exec_fastx`;
 
 my $totalSequences=0;
@@ -42,7 +41,7 @@ $fastxLog=~ s/\n/\|/g;
 my ($log1,$log2)= split(/\|/,$fastxLog);
 my @logSplit=split(/\s/,$log2);
 $totalSequences=$logSplit[1];
-#$trimmedCollapsedTemp="$outDir/$sra_acc/SRR7971416.trimmed.collapsed.fastq";
+##$trimmedCollapsedTemp="$outDir/$sra_acc/SRR7971416.trimmed.collapsed.fastq";
 
 if (-e $trimmedCollapsedTemp) {
 	open (FA,"$trimmedCollapsedTemp") or die "[ERROR]\t",scalar(localtime()),"\tCan't open the $trimmedCollapsedTemp file\n";
@@ -64,7 +63,7 @@ if (-e $trimmedCollapsedTemp) {
 		}
 	close FA;
 	close FAOUT;
-	#system("rm $trimmedCollapsedTemp");
+	##system("rm $trimmedCollapsedTemp");
 	print "\n[INFO]\t",scalar(localtime()),"\tOutput generated: $trimmedCollapsedReHead\n\n";
 	}
 else {
