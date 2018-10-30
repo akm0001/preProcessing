@@ -1,0 +1,66 @@
+use strict;
+use warnings;
+use Data::Dumper;
+
+my $inp=$ARGV[0];
+my $fileID=$ARGV[1];
+my $outDir=$ARGV[2];
+
+
+if ((!$inp) || (!-e $inp)|| (!$fileID) || (!$outDir)) {
+	print "#### [ERROR]\t",scalar(localtime()),"\tCheck usage: perl filter_blastn_results.pl /home/anand/Documents/preProcessing/src/main/test/blast.results.SRR7971416.txt SRR7971416 /home/anand/Documents/preProcessing/src/main/test/\n";
+	exit;
+	}
+
+my (%sraID,%unique,%blastnMap)=();
+
+open (RES,"$inp") or die "\n#### [ERROR]\t",scalar(localtime()),"\tCan't open the blast output file $inp\n";
+while (my $res=<RES>){
+	chomp $res;
+	my ($qseqid,$sseqid,$pident,$length,$mismatch,$gapopen,$qstart,$qend,$sstart,$send,$evalue,$bitscore)= split (/\t/,$res);
+	#my $scientific_notation = "$evalue";
+	#my $decimal_notation = sprintf("%.20f", $scientific_notation);
+	#my $val="$qseqid|$decimal_notation";
+	my $val="$qseqid|$evalue";
+	my $key="$sseqid";
+	my $blastnKey="$qseqid|$sseqid|$evalue";
+	my $blastnVal="$res";
+	$blastnMap{$blastnKey}=$blastnVal;
+	if (exists $sraID{$key}) {
+		$sraID{$key}= $sraID{$key}.",".$val;
+		}
+	else {
+		$sraID{$key}= $val;
+		}
+	}
+close RES;
+#print Dumper (\%sraID);
+
+open (TEMP,">$outDir/$fileID.temp.blast.map.txt") or die "\n#### [ERROR]\t",scalar(localtime()),"\tCan't write to $outDir\n";
+
+foreach my $key (sort keys %sraID){
+	my @vals= split (/\,/, $sraID{$key});
+	my (@tRNA,@evals)= ();
+	for (my $i=0;$i<=$#vals;$i++){
+		my ($id,$val) =split(/\|/,$vals[$i]);
+		push @tRNA,$id;
+		push @evals,$val;
+		}
+	my @list = sort { $a <=> $b } @evals;
+	my @evalIndex= retIndex($list[0],@vals);
+	print TEMP "$key\t$list[0]\t", join(",", @evalIndex), "\t\t\t$sraID{$key}\n";
+	for (my $j=0;$j<=$#evalIndex;$j++){ my $uniqIDs= "$evalIndex[$j]|$key|$list[0]"; if (defined $blastnMap{$uniqIDs}){print "$blastnMap{$uniqIDs}\n";}}
+	}
+
+
+sub retIndex {
+	my ($query,@inpArr)=@_;
+	my @indexes=();
+	for (my $i=0;$i<=$#inpArr;$i++){
+		my ($trnaID,$eval)=split(/\|/,$inpArr[$i]);
+		if ($query == $eval){
+			push @indexes, $trnaID;
+			}
+		}
+	return @indexes;
+	}

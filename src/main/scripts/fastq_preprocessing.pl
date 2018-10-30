@@ -55,6 +55,7 @@ if (-e $trimmedCollapsedTemp) {
 		if ($rec=~ /^\>/){
 			my ($sn,$count)= split (/\-/,$rec);
 			$sn=~ s/\>//g;
+			#my $normalizedCount=sprintf "%.2f",(($count/$totalSequences)*1000000);
 			my $normalizedCount=($count/$totalSequences)*1000000;
 			print FAOUT ">$sra_acc\_$uniqID\_$count\_$normalizedCount\n";
 			#print "$uniqID\n";
