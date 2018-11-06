@@ -71,7 +71,7 @@ if (-e $trimmedCollapsedTemp) {
 	close FAOUT;
 	##system("rm $trimmedCollapsedTemp");
 	print "#### [INFO]\t",scalar(localtime()),"\tOutput generated: $trimmedCollapsedReHead\n\n";
-	system("$exec_faFormat");
+	#system("$exec_faFormat");
 	}
 else {
 	print "\n#### [ERROR]\t",scalar(localtime()),"\tNo output generated from fastx_collapser\n";
