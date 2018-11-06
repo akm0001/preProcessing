@@ -17,11 +17,13 @@ my $trimmedFastq="$outDir/$sra_acc/$sra_acc.AT.fastq";
 ##my $trimmedFastq="$outDir/$sra_acc/$sra_acc.TEMP.fastq";
 my $trimmedCollapsedTemp="$outDir/$sra_acc/$sra_acc.AT.COL.TEMP.fa";
 my $trimmedCollapsedReHead="$outDir/$sra_acc/$sra_acc.AT.COL.fa";
+my $trimmedCollapsedReHeadTable="$outDir/$sra_acc/$sra_acc.AT.COL.tab.txt";
 
 my $createWD="mkdir -p $outDir/$sra_acc";
 my $exec_fastqDump="$fastq_dump $sra_acc -O $outDir/$sra_acc";
 my $exec_trimmomatic="java -jar $trimmomatic SE -phred33 $outDir/$sra_acc/$sra_acc.fastq $trimmedFastq ILLUMINACLIP:$adapters:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25";
 my $exec_fastx="fastx_collapser -v -i $trimmedFastq -o $trimmedCollapsedTemp";
+my $exec_faFormat="fasta_formatter -i $trimmedCollapsedReHead -t -o $trimmedCollapsedReHeadTable";
 
 print "#### [INFO]\t",scalar(localtime()),"\tProcessing $sra_acc\n\n";
 system("$createWD");
@@ -69,6 +71,7 @@ if (-e $trimmedCollapsedTemp) {
 	close FAOUT;
 	##system("rm $trimmedCollapsedTemp");
 	print "#### [INFO]\t",scalar(localtime()),"\tOutput generated: $trimmedCollapsedReHead\n\n";
+	system("$exec_faFormat");
 	}
 else {
 	print "\n#### [ERROR]\t",scalar(localtime()),"\tNo output generated from fastx_collapser\n";
