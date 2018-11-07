@@ -1,3 +1,4 @@
+#usage: perl preProcessing/src/main/scripts/mapping.pl SRR7971417/SRR7971417/SRR7971417.AT.COL.tab.txt preProcessing/src/main/test/human.hg19.tRna.map.txt temp.bl.txt > map.out.txt
 use strict;
 #use warnings;
 use Data::Dumper;
@@ -33,8 +34,13 @@ while (my $qrRec= <QR>) {
 close QR;
 #print Dumper(\%queryHeaderMap);
 
+my $resultFile="$outDir/readMapping.temp.txt";
+open(OUT,">$resultFile") or die "#### [ERROR]\t",scalar(localtime()),"\tCan't write to $resultFile\n";
 
 open(BL,$blastRes) or die "#### [ERROR]\t",scalar(localtime()),"\tCan't open the blast results table $blastRes\n";
+
+my %tempMap=();
+
 while (my $blRec=<BL>) {
 	chomp $blRec;
 	my ($seqMod,$qseqMod)= ();
@@ -64,28 +70,36 @@ while (my $blRec=<BL>) {
 		$qP1Len=0;
 		}
 	else {
-		$qP1Len=0+$qstart;
+		$qP1Len=$length;
 		}
-	my $qP1= substr $qseqMod, 0,$qP1Len;
+	my $qP1= substr $qseqMod, 0,$qstart-1;
 	my $qMa= substr $qseqMod, $qstart-1,$length;
 	my $qP2= substr $qseqMod, $qend,($qSeqLength-$qend);
+
 	my ($sModStart,$sModEnd)=();
-	if ($send < $sstart){$sModStart=$send; $sModEnd=$sstart;}
+	if ($send < $sstart){$sModStart=($sSeqLength-$sstart)+1; $sModEnd=($sSeqLength-$send);}
 	else {$sModStart=$sstart; $sModEnd=$send;}
 	my $sP1Len=();
+
 	if ($sModStart==1){
 		$sP1Len=0;
 		}
 	else {
-		$sP1Len=0+$sModStart;
+		$sP1Len=$length;
 		}
-	my $sP1= substr $seqMod, 0, $sP1Len;
-	my $sMa= substr $seqMod, $sModStart, $length;
-	my $sP2= substr $seqMod, $sModEnd,($sSeqLength-$sModEnd);
-	#print "$qseqMod\t[$qstart-$qend]\t$qseqid\n$qP1-$qMa-$qP2\n$qseq\n$seqMod\t[$sstart-$send][$sModStart-$sModEnd]\t$sseqid\n$sP1-$sMa-$sP2\n$sseq\n\n";
-	print "$qP1-$qMa-$qP2\t[$qstart-$qend]\t$qseqid\n$sP1-$sMa-$sP2\t[$sModStart-$sModEnd]\t$sseqid\n\n";
 
+	my $sP1= substr $seqMod, 0, $sModStart-1;
+	my $sMa= substr $seqMod, $sModStart-1, $length;
+	my $sP2= substr $seqMod, $sModEnd,($sSeqLength-$sModEnd);
+	#"$qseqMod\t[$qstart-$qend]\t$qseqid\n$qP1-$qMa-$qP2\n$qseq\n$seqMod\t[$sstart-$send][$sModStart-$sModEnd]\t$sseqid\n$sP1-$sMa-$sP2\n$sseq\n\n";
+	#print "$qP1*$qMa*$qP2\t[$qstart-$qend]\t$qseqid\n$sP1*$sseq*$sP2\t[$sModStart-$sModEnd]\t$sseqid\n\n";
+	my $tempStr="$qseqid|$qstart|$qend\t$qP1*$qMa*$qP2\t$sseqid|$sModStart|$sModEnd\t$sP1*$sseq*$sP2";
+	$tempMap{$tempStr}=$tempStr;
+	print OUT "$qseqid|$qstart|$qend\t$qP1*$qMa*$qP2\n$sseqid|$sModStart|$sModEnd\t$sP1*$sseq*$sP2\n\n";
 
 
 	#exit;
 	}
+close OUT;
+
+print Dumper(\%tempMap);
