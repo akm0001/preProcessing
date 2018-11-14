@@ -35,7 +35,7 @@ close QR;
 #print Dumper(\%queryHeaderMap);
 
 my $resultFile="$outDir/readMapping.temp.txt";
-open(OUT,">$resultFile") or die "#### [ERROR]\t",scalar(localtime()),"\tCan't write to $resultFile\n";
+##open(OUT,">$resultFile") or die "#### [ERROR]\t",scalar(localtime()),"\tCan't write to $resultFile\n";
 
 open(BL,$blastRes) or die "#### [ERROR]\t",scalar(localtime()),"\tCan't open the blast results table $blastRes\n";
 
@@ -95,11 +95,12 @@ while (my $blRec=<BL>) {
 	#print "$qP1*$qMa*$qP2\t[$qstart-$qend]\t$qseqid\n$sP1*$sseq*$sP2\t[$sModStart-$sModEnd]\t$sseqid\n\n";
 	my $tempStr="$qseqid|$qstart|$qend\t$qP1*$qMa*$qP2\t$sseqid|$sModStart|$sModEnd\t$sP1*$sseq*$sP2";
 	$tempMap{$tempStr}=$tempStr;
-	print OUT "$qseqid|$qstart|$qend\t$qP1*$qMa*$qP2\n$sseqid|$sModStart|$sModEnd\t$sP1*$sseq*$sP2\n\n";
-
-
+	##print OUT "$qseqid|$qstart|$qend\t$qP1*$qMa*$qP2\n$sseqid|$sModStart|$sModEnd\t$sP1*$sseq*$sP2\n\n";
+	#if (exists $tempMap{$qseqid}){$tempMap{$qseqid}=$tempMap{$qseqid}."#".$tempStr;}
+	#else {$tempMap{$qseqid}=$tempStr;}
 	#exit;
+	print "$tempStr\n";
 	}
 close OUT;
 
-print Dumper(\%tempMap);
+#print Dumper(\%tempMap);
