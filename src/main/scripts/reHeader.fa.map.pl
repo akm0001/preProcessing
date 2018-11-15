@@ -98,6 +98,7 @@ foreach my $tabRec (sort keys %idsTab) {
 	for (my $i=0;$i<=$#records;$i++) {
 		my $count=$i+1;
 		my ($outSequence,$outPos)= split(/\t/,$records[$i]);
+		$records[$i]=~ s/\:/\|/g;
 		print OUTMAPTAB "$tabRec.$count\t$records[$i]\n";
 		print OUTFA "$tabRec.$count\n$outSequence\n";
 		}

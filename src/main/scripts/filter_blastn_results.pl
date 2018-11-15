@@ -17,11 +17,12 @@ my (%sraID,%unique,%blastnMap)=();
 open (RES,"$inp") or die "\n#### [ERROR]\t",scalar(localtime()),"\tCan't open the blast output file $inp\n";
 while (my $res=<RES>){
 	chomp $res;
-	my ($qseqid,$sseqid,$pident,$length,$mismatch,$gapopen,$qstart,$qend,$sstart,$send,$evalue,$bitscore)= split (/\t/,$res);
+	#my ($qseqid,$sseqid,$pident,$length,$mismatch,$gapopen,$qstart,$qend,$sstart,$send,$evalue,$bitscore)= split (/\t/,$res);
+	my ($qseqid,$sseqid,$pident,$length,$mismatch,$gapopen,$qstart,$qend,$sstart,$send,$evalue,$bitscore,$qseq,$sseq,$qframe,$sframe,$btop,$sstrand) = split(/\t/,$res);
 	#my $scientific_notation = "$evalue";
 	#my $decimal_notation = sprintf("%.20f", $scientific_notation);
 	#my $val="$qseqid|$decimal_notation";
-	my $val="$qseqid|$evalue|$pident|$length|$mismatch|$gapopen|$qstart|$qend|$sstart|$send|$bitscore";
+	my $val="$qseqid|$evalue|$pident|$length|$mismatch|$gapopen|$qstart|$qend|$sstart|$send|$bitscore|$qseq|$sseq";
 	my $key="$sseqid";
 	my $blastnKey="$qseqid|$sseqid|$evalue";
 	my $blastnVal="$res";
