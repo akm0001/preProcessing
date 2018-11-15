@@ -38,6 +38,7 @@ close RES;
 #print Dumper (\%sraID);
 
 open (TEMP,">$outDir/$fileID.temp.blast.map.txt") or die "\n#### [ERROR]\t",scalar(localtime()),"\tCan't write to $outDir\n";
+open (OUT,">$outDir/$fileID.blast.filtered.txt") or die "\n#### [ERROR]\t",scalar(localtime()),"\tCan't write to $outDir\n";
 
 foreach my $key (sort keys %sraID){
 	my @vals= split (/\,/, $sraID{$key});
@@ -57,7 +58,7 @@ foreach my $key (sort keys %sraID){
 	my @uniqValIndex = grep {!$seenArr{$_}++}@evalIndex;
 
 	for (my $j=0;$j<=$#uniqValIndex;$j++){
-		print "$key\t$uniqValIndex[$j]\t$list[0]\n";
+		print OUT "$key\t$uniqValIndex[$j]\t$list[0]\n";
 		}
 	}
 
