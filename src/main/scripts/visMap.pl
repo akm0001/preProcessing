@@ -1,63 +1,56 @@
+#usage: perl visMap.pl mapped.txt
 use strict;
 use warnings;
 use Data::Dumper;
 
-my $inpMap=$ARGV[0];
-my %qSeqMap=();
-my %qIDs=();
+my $map= $ARGV[0];
 
-open(MAP,"$inpMap") or die "can't open the mapping file\n";
-while(my $rec=<MAP>){
+my %qIDsMap= (); #all the corresponding reads and its IDs
+my %qIDSeq= ();
+
+open (MAP,"$map");
+while (my $rec= <MAP>){
 	chomp $rec;
-	my ($tempqID,$tempqSeq,$tempsID,$tempsSeq)= split(/\t/,$rec);
-	my ($qID,$qStart,$qEnd)= split(/\|/,$tempqID);
-	my ($sID,$sStart,$sEnd)= split(/\|/,$tempsID);
-	my $tempqSeqMod=$tempqSeq;
-	$tempqSeqMod=~ s/\*//g;
-	if (exists $qSeqMap{$tempqSeqMod}) {
-		$qSeqMap{$tempqSeqMod}=$qSeqMap{$tempqSeqMod}."#".$qID;
+	my ($qseqInfo,$qseq,$sseqInfo,$sseq)= split(/\t/,$rec);
+	my ($qID,$qstart,$qend)= split(/\|/,$qseqInfo);
+	my ($sID,$sstart,$send)= split(/\|/,$sseqInfo);
+	my $valIDMap="$qstart|$qend|$sID|$sstart|$send|$sseq";
+	if (exists $qIDsMap{$qID}) {
+		$qIDsMap{$qID}=$qIDsMap{$qID}."#".$valIDMap;
 		}
 	else {
-		$qSeqMap{$tempqSeqMod}=$qID;
+		$qIDsMap{$qID}=$valIDMap;
 		}
-
-	#$qIDs{$qID}="$tempsSeq|$qStart|$qEnd\t$";
-	my $str="$qStart|$qEnd|$tempqSeq|$sID|$sStart|$sEnd|$tempsSeq";	
-	if (exists $qIDs{$qID}) {
-		$qIDs{$qID}=$qIDs{$qID}."#".$str;
-		}
-	else {
-		$qIDs{$qID}=$str;
-		}
+	$qseq=~ s/\*//g;
+	$qIDSeq{$qID}=$qseq;
 	}
 close MAP;
 
-#print Dumper(\%qSeqMap);
+#print Dumper(\%qIDsMap);
 
-#%qSeqMap=CCTTCGATAGCTCAGTTGGTAGAGCGGAGGACTGTAGTGGATAGGGCGTGGCAATCCTTAGGTCGCTGGTTCGATTCCGGCTCGAAGGA==Hs_tRNA.Y.GTA.2#Hs_tRNA.Y.GTA.2
-#%qID= Hs_tRNA.C.GCA.10==8|35|GGGGGTA*TAGCTCAGGGGTAGAGCATTTGACTGCA*GATCAAGAGGTCCCTGGTTCAAATCCAGGTGCCCCCC|SRR7971417_0151461_10_0.44|4|30|ATG*TAGCTCAGGGGTAGAGCATTTGACTGCA*AAATGCATTGGATATGAACC#
-
-foreach my $key(sort keys %qSeqMap){
-	my %seenArr= ();
-	my @listIDs= split(/\#/,$qSeqMap{$key});
-	my @uniqIds= grep {!$seenArr{$_}++}@listIDs;
-	my $lenQSeq=length($key);
-	my @mappedReads=split(/\#/,$qIDs{$uniqIds[0]});
-	my $lenRefScale=30+$lenQSeq+30;
-	for(my $i=0;$i<=$lenRefScale;$i++){
-		if (($i>=30) && ($i<=(30+$lenQSeq))){
-	#		print $key;
-			}
-	#	else {print "_";}
-		}
-	#print "\n";
-	my @refSeqStr=split(//,$key);
-	for(my $i=-30;$i>=8;$i++){
-		print "$i";
-		#print $i;
+foreach my $tRnaID (sort keys %qIDsMap) {
+	#printf ("%-32s", $tRnaID);
+	#print "$qIDSeq{$tRnaID}\n";
+	my $lenRna= length($qIDSeq{$tRnaID});
+	my $totalRefLen=($lenRna+60);
+	my $padding=('-' x 30);
+	my $indent=(' ' x 5);
+	print $padding.$qIDSeq{$tRnaID}.$padding.$indent.$tRnaID."\n";
+	my @mappedList= split(/\#/,$qIDsMap{$tRnaID});
+	for (my $i=0;$i<=$#mappedList;$i++){
+		my ($posQStart,$posQEnd,$subID,$posSStart,$posSEnd,$sSequence)=split(/\|/,$mappedList[$i]);
+		#print "$subID\t$sSequence\t[$posQStart,$posQEnd]\t[$posSStart,$posSEnd]\n";
+		#print "$subID\t";
+		$sSequence=~ s/\*//g;
+		my $readStartPos=(30+$posQStart)-$posSStart;
+		my $readPaddingLeft= '-' x $readStartPos;
+		my $covLenRead= length ($readPaddingLeft.$sSequence);
+		#print $readPaddingLeft.$sSequence. $covLenRead;
+		my $readPaddingRightPos=($totalRefLen-$covLenRead);
+		my $readPaddingRight= '-' x $readPaddingRightPos;
+		print $readPaddingLeft.$sSequence.$readPaddingRight.$indent;
+		print "$subID\tRef:[$posQStart,$posQEnd] Read:[$posSStart,$posSEnd]\n";
 		}
 	print "\n";
-	#print "$refSeqStr[8]#$refSeqStr[7]";
-	print join("|",@refSeqStr),"\n";
-	#print "$uniqIds[0]\t$key\n$qIDs{$uniqIds[0]}\n";
 	}
+
