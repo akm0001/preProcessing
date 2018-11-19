@@ -1,15 +1,19 @@
 library(ggplot2)
+library(grid)
+library(dplyr)
+library(grid)
+
 par(mfrow=c(1,2))
 blastFull<- read.table("/home/anand/Documents/resources/test.plot.inp.txt",header = F,sep = "\t")
 blastFiltered<- read.table("/home/anand/Documents/resources/test.plot.inp.2.txt",header = F,sep = "\t")
+
 # Compute the density data
 densPlotFull <- density(blastFull$V5)
 # plot density
-plot(densPlotFull, frame = FALSE, col = "steelblue", 
-     main = "Blastn (full)") 
+plot(densPlotFull, frame = FALSE, col = "steelblue", main = "Blastn (full)") 
 
-densPlotFuiltered <- density(blastFiltered$V5)
+densPlotFiltered <- density(blastFiltered$V5)
 # plot density
-plot(densPlotFuiltered, frame = FALSE, col = "steelblue", 
-     main = "Blastn (filtered)") 
+plot(densPlotFiltered, frame = FALSE, col = "steelblue", main = "Blastn (filtered)") 
+
 
