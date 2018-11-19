@@ -1,4 +1,7 @@
-## Custom scripts for preprocessing SRA data
+## Custom scripts for
+* Preprocessing SRA data
+* Find the reads mapping to the tRNA sequence using blastn
+* Create a alignment map of the tRNA sequence and the corresponding reads
 
 under development
 
