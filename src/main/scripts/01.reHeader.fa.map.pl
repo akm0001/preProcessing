@@ -9,7 +9,7 @@ my $resources= "/home/anand/Documents/code/src/main/resources/";
 my $config= $ARGV[0];
 
 if ((!$config) || (!$resources)) {
-	print "[ERROR]\t",scalar(localtime()),"\tUsage: perl format_hg19_tRNA_ref.pl config.txt\n";
+	print "[ERROR]\t",scalar(localtime()),"\tUsage: perl 01.reHeader.fa.map.pl config.txt\n";
 	exit;
 	}
 

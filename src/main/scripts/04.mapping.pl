@@ -1,4 +1,4 @@
-#usage: perl preProcessing/src/main/scripts/mapping.pl SRR7971417/SRR7971417/SRR7971417.AT.COL.tab.txt preProcessing/src/main/test/human.hg19.tRna.map.txt temp.bl.txt > map.out.txt
+#usage: perl preProcessing/src/main/scripts/04.mapping.pl SRR7971417/SRR7971417/SRR7971417.AT.COL.tab.txt preProcessing/src/main/test/human.hg19.tRna.map.txt temp.bl.txt > map.out.txt
 use strict;
 #use warnings;
 use Data::Dumper;

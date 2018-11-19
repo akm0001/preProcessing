@@ -9,7 +9,7 @@ my $trimmomatic=$ARGV[3];
 my $adapters=$ARGV[4];
 
 if ((!$sra_acc)||(!$outDir)||(!$fastq_dump)||(!$trimmomatic)||(!$adapters)){
-	print "#### [ERROR]\t",scalar(localtime()),"\tCheck usage: perl fastq_preprocessing.pl <SRA accession ID> <output directory> <fast-dump path> <trimmomatic path> <adapter_sequence.fa>\t example: perl fastq_preprocessing.pl SRR7971416 /home/anand/Documents/temp/ /home/anand/Downloads/sratoolkit.2.9.2-ubuntu64/bin/fastq-dump /home/anand/Downloads/Trimmomatic-0.38/trimmomatic-0.38.jar /home/anand/Downloads/Trimmomatic-0.38/adapters/TruSeq3-SE.fa\n";
+	print "#### [ERROR]\t",scalar(localtime()),"\tCheck usage: perl 02.fastq_preprocessing.pl <SRA accession ID> <output directory> <fast-dump path> <trimmomatic path> <adapter_sequence.fa>\t example: perl fastq_preprocessing.pl SRR7971416 /home/anand/Documents/temp/ /home/anand/Downloads/sratoolkit.2.9.2-ubuntu64/bin/fastq-dump /home/anand/Downloads/Trimmomatic-0.38/trimmomatic-0.38.jar /home/anand/Downloads/Trimmomatic-0.38/adapters/TruSeq3-SE.fa\n";
 	exit;
 	}
 

@@ -8,7 +8,7 @@ my $outDir=$ARGV[2];
 
 
 if ((!$inp) || (!-e $inp)|| (!$fileID) || (!$outDir)) {
-	print "#### [ERROR]\t",scalar(localtime()),"\tCheck usage: perl filter_blastn_results.pl /home/anand/Documents/preProcessing/src/main/test/blast.results.SRR7971416.txt SRR7971416 /home/anand/Documents/preProcessing/src/main/test/\n";
+	print "#### [ERROR]\t",scalar(localtime()),"\tCheck usage: perl 03.filter_blastn_results.pl /home/anand/Documents/preProcessing/src/main/test/blast.results.SRR7971416.txt SRR7971416 /home/anand/Documents/preProcessing/src/main/test/\n";
 	exit;
 	}
 

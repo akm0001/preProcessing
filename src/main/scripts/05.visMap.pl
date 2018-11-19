@@ -1,4 +1,4 @@
-#usage: perl visMap.pl mapped.txt
+#usage: perl 05.visMap.pl mapped.txt
 use strict;
 use warnings;
 use Data::Dumper;
