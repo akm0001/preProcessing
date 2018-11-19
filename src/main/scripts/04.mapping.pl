@@ -92,9 +92,12 @@ while (my $blRec=<BL>) {
 	my $sP1= substr $seqMod, 0, $sModStart-1;
 	my $sMa= substr $seqMod, $sModStart-1, $length;
 	my $sP2= substr $seqMod, $sModEnd,($sSeqLength-$sModEnd);
+	my $subSeq= $sP1.$sseq.$sP2;
+	my $subSeqLen= length ($subSeq);
+	my $queryCovSubSeq= sprintf "%.2f", (100* ($sModEnd-$sModStart)/$subSeqLen);
 	#"$qseqMod\t[$qstart-$qend]\t$qseqid\n$qP1-$qMa-$qP2\n$qseq\n$seqMod\t[$sstart-$send][$sModStart-$sModEnd]\t$sseqid\n$sP1-$sMa-$sP2\n$sseq\n\n";
 	#print "$qP1*$qMa*$qP2\t[$qstart-$qend]\t$qseqid\n$sP1*$sseq*$sP2\t[$sModStart-$sModEnd]\t$sseqid\n\n";
-	my $tempStr="$qseqid|$qstart|$qend\t$qP1*$qMa*$qP2\t$sseqid|$sModStart|$sModEnd|$pident\t$sP1*$sseq*$sP2";
+	my $tempStr="$qseqid|$qstart|$qend\t$qP1*$qMa*$qP2\t$sseqid|$sModStart|$sModEnd|$pident|$queryCovSubSeq\t$sP1*$sseq*$sP2";
 	$tempMap{$tempStr}=$tempStr;
 	##print OUT "$qseqid|$qstart|$qend\t$qP1*$qMa*$qP2\n$sseqid|$sModStart|$sModEnd\t$sP1*$sseq*$sP2\n\n";
 	#if (exists $tempMap{$qseqid}){$tempMap{$qseqid}=$tempMap{$qseqid}."#".$tempStr;}

@@ -13,8 +13,8 @@ while (my $rec= <MAP>){
 	chomp $rec;
 	my ($qseqInfo,$qseq,$sseqInfo,$sseq)= split(/\t/,$rec);
 	my ($qID,$qstart,$qend)= split(/\|/,$qseqInfo);
-	my ($sID,$sstart,$send,$pident)= split(/\|/,$sseqInfo);
-	my $valIDMap="$qstart|$qend|$sID|$sstart|$send|$pident|$sseq";
+	my ($sID,$sstart,$send,$pident,$queryCovSub)= split(/\|/,$sseqInfo);
+	my $valIDMap="$qstart|$qend|$sID|$sstart|$send|$pident|$queryCovSub|$sseq";
 	if (exists $qIDsMap{$qID}) {
 		$qIDsMap{$qID}=$qIDsMap{$qID}."#".$valIDMap;
 		}
@@ -38,7 +38,7 @@ foreach my $tRnaID (sort keys %qIDsMap) {
 	print $padding.$qIDSeq{$tRnaID}.$padding.$indent.$tRnaID."\n";
 	my @mappedList= split(/\#/,$qIDsMap{$tRnaID});
 	for (my $i=0;$i<=$#mappedList;$i++){
-		my ($posQStart,$posQEnd,$subID,$posSStart,$posSEnd,$identity,$sSequence)=split(/\|/,$mappedList[$i]);
+		my ($posQStart,$posQEnd,$subID,$posSStart,$posSEnd,$identity,$queryCovSubSeq,$sSequence)=split(/\|/,$mappedList[$i]);
 		#print "$subID\t$sSequence\t[$posQStart,$posQEnd]\t[$posSStart,$posSEnd]\n";
 		#print "$subID\t";
 		$sSequence=~ s/\*//g;
@@ -49,7 +49,7 @@ foreach my $tRnaID (sort keys %qIDsMap) {
 		my $readPaddingRightPos=($totalRefLen-$covLenRead);
 		my $readPaddingRight= '-' x $readPaddingRightPos;
 		print $readPaddingLeft.$sSequence.$readPaddingRight.$indent;
-		print "$subID\tRef:[$posQStart,$posQEnd] Read:[$posSStart,$posSEnd] I: $identity\n";
+		print "$subID\tRef:[$posQStart,$posQEnd] Read:[$posSStart,$posSEnd] I: $identity Q: $queryCovSubSeq\n";
 		}
 	print "\n";
 	}
