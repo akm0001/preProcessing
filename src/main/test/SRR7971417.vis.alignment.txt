@@ -1,0 +1,234 @@
+------------------------------GGGGGTATAGCTCAGGGGTAGAGCATTTGACTGCAAATCAAGAGGTCCCTGATTCAAATCCAGGTGCCCCCT------------------------------     Hs_tRNA.C.GCA.9
+----------------------------------ATGTAGCTCAGGGGTAGAGCATTTGACTGCAAATTGCATTGGATATGAACC-----------------------------------------------     SRR7971417_0151461_10_0.44	Ref:[8,38] Read:[4,33] I: 100.00
+
+------------------------------TCCTCGTTAGTATAGTGGTGAGTATCCCCGCCTGTCACGCGGGAGACCGGGGTTCGATTCCCCGACGGGGAG------------------------------     Hs_tRNA.D.GTC.1
+----------------------------------------------------TATCCCCGCCTGTCACGCGGGAGACCGGGGTTCGATTCCCCGACGGGGAGG-----------------------------     SRR7971417_2216932_3_0.13	Ref:[23,72] Read:[1,49] I: 100.00
+--------------------------------------------------TGGAAGAAGATCCAGCACGCGGGAGACCGGGGTTCGATTCCCCGACGGGGG-------------------------------     SRR7971417_3007732_2_0.09	Ref:[36,70] Read:[16,49] I: 100.00
+---------------------CGGCGGCCGGACGGTTTTTTATAGTGGTGAGTATCCCCGCCTGTCACGCGG------------------------------------------------------------     SRR7971417_3137253_2_0.09	Ref:[11,41] Read:[20,49] I: 100.00
+
+------------------------------TCCTCGTTAGTATAGTGGTGAGTGTCCCCGTCTGTCACGCGGGAGACCGGGGTTCGATTCCCCGACGGGGAG------------------------------     Hs_tRNA.D.GTC.2
+--------------------------------------------------TGGAAGAAGATCCAGCACGCGGGAGACCGGGGTTCGATTCCCCGACGGGGG-------------------------------     SRR7971417_3007732_2_0.09	Ref:[36,70] Read:[16,49] I: 100.00
+
+------------------------------TCCCTGGTGGTCTAGTGGTTAGGATTCGGCGCTCTCACCGCCGCGGCCCGGGTTCGATTCCCGGTCAGGAAA------------------------------     Hs_tRNA.E.CTC.1
+----------------------------GCGCTTTGTCAACGTTGTGGTTAGGATTCGGCGCTCTCACCGCCGCGGCCC-----------------------------------------------------     SRR7971417_2033720_3_0.13	Ref:[15,48] Read:[17,49] I: 100.00
+--------------------------GACCATCCCTATCCTCT-GTGGTTAGGATTCGGCGCTCTCACCGCCGCGGAC------------------------------------------------------     SRR7971417_3962211_1_0.04	Ref:[11,45] Read:[15,47] I: 97.14
+
+------------------------------TCCCTGGTGGTCTAGTGGTTAGGATTCGGCGCTCTCACCGCCGCGGCCCGGGTTCGATTCCCGGTCAGGGAA------------------------------     Hs_tRNA.E.CTC.2
+----------------------------GCGCTTTGTCAACGTTGTGGTTAGGATTCGGCGCTCTCACCGCCGCGGCCC-----------------------------------------------------     SRR7971417_2033720_3_0.13	Ref:[15,48] Read:[17,49] I: 100.00
+--------------------------GACCATCCCTATCCTCT-GTGGTTAGGATTCGGCGCTCTCACCGCCGCGGAC------------------------------------------------------     SRR7971417_3962211_1_0.04	Ref:[11,45] Read:[15,47] I: 97.14
+
+------------------------------TCCCATATGGTCTAGCGGTTAGGATTCCTGGTTTTCACCCAGGTGGCCCGGGTTCGACTCCCGGTATGGGAA------------------------------     Hs_tRNA.E.TTC.2
+------------------------------------------------------TGGAAAGTTTTCACCCAGGTGGCCCGGGTTCGACTCCCGGTATGGGAAACC---------------------------     SRR7971417_1635621_4_0.18	Ref:[31,72] Read:[7,47] I: 100.00
+-----------------------------------------------------------CTCTTTCACCCAGGTGGCCCGGGTTCGACTCCCGGTATGGGAAACGCTTCC----------------------     SRR7971417_2706256_2_0.09	Ref:[33,72] Read:[4,42] I: 100.00
+--------------------------------TCATATGGTCTAGCGGTTAGGATTCCTGGTTTTCACCCAGGTGGCCCGGGG-------------------------------------------------     SRR7971417_2871018_2_0.09	Ref:[4,52] Read:[2,49] I: 100.00
+
+------------------------------TCCCTGGTGGTCTAGTGGCTAGGATTCGGCGCTTTCACCGCCGCGGCCCGGGTTCGATTCCCGGCCAGGGAA------------------------------     Hs_tRNA.E.TTC.3
+------------------------------------GTGGTCTAGTGGCTAGGATTCGGCGCTTTCACCGCCGCGGCCCGGGTTCG----------------------------------------------     SRR7971417_2330583_3_0.13	Ref:[7,56] Read:[1,50] I: 100.00
+
+------------------------------TCCCTGGTGGTCTAGTGGCTAGGATTCGGCGCTTTCACCGCCGCGGCCCGGGTTCGATTCCCGGTCAGGGAA------------------------------     Hs_tRNA.E.TTC.4
+------------------------------------GTGGTCTAGTGGCTAGGATTCGGCGCTTTCACCGCCGCGGCCCGGGTTCG----------------------------------------------     SRR7971417_2330583_3_0.13	Ref:[7,56] Read:[1,50] I: 100.00
+---------------------------------------------------GGATTCGGCGCTTTCACCGCCGCGGCCCGGGTTCGATTCCCGGTCAGGGA-------------------------------     SRR7971417_3778946_1_0.04	Ref:[22,71] Read:[1,50] I: 100.00
+
+------------------------------GCGCCGCTGGTGTAGTGGTATCATGCAAGATTCCCATTCTTGCGACCCGGGTTCGATTCCCGGGCGGCGCA------------------------------     Hs_tRNA.G.CCC.3
+-------------------------------------------------------------GCCCATTCTTGCGACCCGGGTTCGATTCCCGGGCGGCGCATAGGCGTTTT--------------------     SRR7971417_3646732_1_0.04	Ref:[33,71] Read:[2,40] I: 100.00
+
+------------------------------GCATGGGTGGTTCAGTGGTAGAATTCTCGCCTGCCACGCGGGAGGCCCGGGTTCGATTCCCGGCCCATGCA------------------------------     Hs_tRNA.G.GCC.2
+---------------------------------------GTTCAGTGGTAGAATTCTCGCCTGCCACGCGGGAGGCCCGGGTTCGATTC------------------------------------------     SRR7971417_1996237_3_0.13	Ref:[10,59] Read:[1,50] I: 100.00
+
+------------------------------GCATTGGTGGTTCAGTGGTAGAATTCTCGCCTGCCACGCGGGAGGCCCGGGTTCGATTCCCGGCCAATGCA------------------------------     Hs_tRNA.G.GCC.3
+---------------------------------------GTTCAGTGGTAGAATTCTCGCCTGCCACGCGGGAGGCCCGGGTTCGATTC------------------------------------------     SRR7971417_1996237_3_0.13	Ref:[10,59] Read:[1,50] I: 100.00
+
+------------------------------GCGTTGGTGGTATAGTGGTGAGCATAGCTGCCTTCCAAGCAGTTGACCCGGGTTCGATTCCCGGCCAACGCA------------------------------     Hs_tRNA.G.TCC.2
+----------------GTACGGTGCGGCACAGTGCAGTGGTATAGTGGTGAGCATAGCTGCCTTCC------------------------------------------------------------------     SRR7971417_1500707_4_0.18	Ref:[7,36] Read:[21,50] I: 100.00
+
+------------------------------GCCATGATCGTATAGTGGTTAGTACTCTGCGCTGTGGCCGCAGCAACCTCGGTTCGAATCCGAGTCACGGCA------------------------------     Hs_tRNA.H.GTG.1
+------------------------------------------------------------------------GCAACCTCGGTTCGAATCCGAGTCACGGCAATTGTGGGAACAATGGCACGG---------     SRR7971417_3181351_1_0.04	Ref:[43,72] Read:[1,29] I: 100.00
+
+------------------------------GCCGTGATCGTATAGTGGTTAGTACTCTGCGTTGTGGCCGCAGCAACCTCGGTTCGAATCCGAGTCACGGCA------------------------------     Hs_tRNA.H.GTG.2
+------------------------------------------------------------------------GCAACCTCGGTTCGAATCCGAGTCACGGCAATTGTGGGAACAATGGCACGG---------     SRR7971417_3181351_1_0.04	Ref:[43,72] Read:[1,29] I: 100.00
+
+------------------------------GGCCGGTTAGCTCAGTCGGCTAGAGCGTGGTGCTAATAACGCCAAGGTCGCGGGTTCGATCCCCGTACGGGCCA------------------------------     Hs_tRNA.I.AAT.1
+--------------------------------------------AACCCCACCAACACAGTCGTTATAACGCCAAGGTCGCGGGTTCGATCCCCC---------------------------------------     SRR7971417_1330681_4_0.18	Ref:[36,64] Read:[22,49] I: 100.00
+
+------------------------------GGCCGGTTAGCTCAGTTGGTCAGAGCGTGGTGCTAATAACGCCAAGGTCGCGGGTTCGATCCCCGTACGGGCCA------------------------------     Hs_tRNA.I.AAT.2
+--------------------------------------------AACCCCACCAACACAGTCGTTATAACGCCAAGGTCGCGGGTTCGATCCCCC---------------------------------------     SRR7971417_1330681_4_0.18	Ref:[36,64] Read:[22,49] I: 100.00
+
+------------------------------GGCCGGTTAGCTCAGTTGGTTAGAGCGTGGCGCTAATAACGCCAAGGTCGCGGGTTCGATCCCCGTACGGGCCA------------------------------     Hs_tRNA.I.AAT.3
+--------------------------------------------AACCCCACCAACACAGTCGTTATAACGCCAAGGTCGCGGGTTCGATCCCCC---------------------------------------     SRR7971417_1330681_4_0.18	Ref:[36,64] Read:[22,49] I: 100.00
+
+------------------------------GGCCGGTTAGCTCAGTTGGTTAGAGCGTGGTGCTAATAACGCCAAGGTCGCGGGTTCGAACCCCGTACGGGCCA------------------------------     Hs_tRNA.I.AAT.4
+-----------------------------------GTTAGCTCAGTTGGTTAGAGCGTGGTGCTAGGATTACAGGCATGAGCCGT-------------------------------------------------     SRR7971417_4192109_1_0.04	Ref:[6,35] Read:[1,30] I: 100.00
+
+------------------------------GGCCGGTTAGCTCAGTTGGTTAGAGCGTGGTGCTAATAACGCCAAGGTCGCGGGTTCGATCCCCGTACGGGCCA------------------------------     Hs_tRNA.I.AAT.5
+--------------------------------------------AACCCCACCAACACAGTCGTTATAACGCCAAGGTCGCGGGTTCGATCCCCC---------------------------------------     SRR7971417_1330681_4_0.18	Ref:[36,64] Read:[22,49] I: 100.00
+-----------------------------------GTTAGCTCAGTTGGTTAGAGCGTGGTGCTAGGATTACAGGCATGAGCCGT-------------------------------------------------     SRR7971417_4192109_1_0.04	Ref:[6,35] Read:[1,30] I: 100.00
+
+------------------------------GGCCGGTTAGCTCAGTTGGTTAGAGCGTGGTGCTAATAACGCCAAGGTCGCGGGTTCGATCCCCGTACTGGCCA------------------------------     Hs_tRNA.I.AAT.6
+--------------------------------------------AACCCCACCAACACAGTCGTTATAACGCCAAGGTCGCGGGTTCGATCCCCC---------------------------------------     SRR7971417_1330681_4_0.18	Ref:[36,64] Read:[22,49] I: 100.00
+-----------------------------------GTTAGCTCAGTTGGTTAGAGCGTGGTGCTAGGATTACAGGCATGAGCCGT-------------------------------------------------     SRR7971417_4192109_1_0.04	Ref:[6,35] Read:[1,30] I: 100.00
+
+------------------------------GGCCGGTTAGCTCAGTTGGTTAGAGCGTGGTGCTAATAACGCTAAGGTCGCGGGTTCGATCCCCGTACTGGCCA------------------------------     Hs_tRNA.I.AAT.7
+-----------------------------------GTTAGCTCAGTTGGTTAGAGCGTGGTGCTAGGATTACAGGCATGAGCCGT-------------------------------------------------     SRR7971417_4192109_1_0.04	Ref:[6,35] Read:[1,30] I: 100.00
+
+------------------------------GGCTGGTTAGCTCAGTTGGTTAGAGCGTGGTGCTAATAACGCCAAGGTCGCGGGTTCGATCCCCGTACTGGCCA------------------------------     Hs_tRNA.I.AAT.8
+--------------------------------------------AACCCCACCAACACAGTCGTTATAACGCCAAGGTCGCGGGTTCGATCCCCC---------------------------------------     SRR7971417_1330681_4_0.18	Ref:[36,64] Read:[22,49] I: 100.00
+-----------------------------------GTTAGCTCAGTTGGTTAGAGCGTGGTGCTAGGATTACAGGCATGAGCCGT-------------------------------------------------     SRR7971417_4192109_1_0.04	Ref:[6,35] Read:[1,30] I: 100.00
+
+------------------------------GCTCCAGTGGCGCAATCGGTTAGCGCGCGGTACTTATATGACAGTGCGAGCGGAGCAATGCCGAGGTTGTGAGTTCGATCCTCACCTGGAGCA------------------------------     Hs_tRNA.I.TAT.4
+---------------------------GGAGCTCCAGTGGCGCAATCGGTTAGCGCGCGGTACTTATATGACAGTTAC---------------------------------------------------------------------------     SRR7971417_4355890_1_0.04	Ref:[1,45] Read:[4,47] I: 100.00
+
+------------------------------GCAGCTAGCTCAGTCGGTAGAGCATGAGACTCTTAATCTCAGGGTCATGGGTTCGTGCCCCATGTTGGGTGCCA------------------------------     Hs_tRNA.K.CTT.1
+----------------------AGCCTTTGAGCCTTTCCCACATCGGTAGAGCATGAGACTCTTAATCTCAGG-------------------------------------------------------------     SRR7971417_2336009_3_0.13	Ref:[14,42] Read:[22,49] I: 100.00
+-----------------------CGTGTGGATTTCTGCTCTTTTCGGTAGAGCATGAGACTCTTAATCTCAGGG------------------------------------------------------------     SRR7971417_3257621_1_0.04	Ref:[14,43] Read:[21,49] I: 100.00
+
+------------------------------GCCCAGCTAGCTCAGTCGGTAGAGCATGAGACTCTTAATCTCAGGGTCATGGGTTTGAGCCCCACGTTTGGTG------------------------------     Hs_tRNA.K.CTT.3
+------------------------AGCCTTTGAGCCTTTCCCACATCGGTAGAGCATGAGACTCTTAATCTCAGG----------------------------------------------------------     SRR7971417_2336009_3_0.13	Ref:[16,44] Read:[22,49] I: 100.00
+-------------------------CGTGTGGATTTCTGCTCTTTTCGGTAGAGCATGAGACTCTTAATCTCAGGG---------------------------------------------------------     SRR7971417_3257621_1_0.04	Ref:[16,45] Read:[21,49] I: 100.00
+
+------------------------------GCCCGGCTAGCTCAGTCGATAGAGCATGAGACTCTTAATCTCAGGGTCGTGGGTTCGAGCCGCACGTTGGGCG------------------------------     Hs_tRNA.K.CTT.5
+-----------------------------------CATCTCCAGAAATCTAGAGCATGAGACTCTTAATCTCAGGGTCGTGGGTTG-----------------------------------------------     SRR7971417_2562824_2_0.09	Ref:[20,54] Read:[15,48] I: 100.00
+
+------------------------------GCCCGGCTAGCTCAGTCGGTAGAGCATGAGACTCTTAATCTCAGGGTCGTGGGTTCGAGCCCCACGTTGGGCG------------------------------     Hs_tRNA.K.CTT.7
+------------------------AGCCTTTGAGCCTTTCCCACATCGGTAGAGCATGAGACTCTTAATCTCAGG----------------------------------------------------------     SRR7971417_2336009_3_0.13	Ref:[16,44] Read:[22,49] I: 100.00
+-----------------------------------CATCTCCAGAAATCTAGAGCATGAGACTCTTAATCTCAGGGTCGTGGGTTG-----------------------------------------------     SRR7971417_2562824_2_0.09	Ref:[20,54] Read:[15,48] I: 100.00
+-------------------------CGTGTGGATTTCTGCTCTTTTCGGTAGAGCATGAGACTCTTAATCTCAGGG---------------------------------------------------------     SRR7971417_3257621_1_0.04	Ref:[16,45] Read:[21,49] I: 100.00
+--------------------------------CGTTGTACATCA-TCGGTAGAGCATGAGACTCTTAATCTCAGGGTCGTGGGG-------------------------------------------------     SRR7971417_4441393_1_0.04	Ref:[12,53] Read:[10,49] I: 97.62
+
+------------------------------GCCCGGCTAGCTCAGTCGGTAGAGCATGGGACTCTTAATCCCAGGGTCGTGGGTTCGAGCCCCACGTTGGGCG------------------------------     Hs_tRNA.K.CTT.8
+----------------------------------------------------AGCATGGGACTCTTAATCCCAGGGTCGTGGGTTCGAGCCCCACGTTGGGCC------------------------------     SRR7971417_1032343_5_0.22	Ref:[23,72] Read:[1,49] I: 100.00
+------------------------AGATCTCTTCCAGACTTTCACTCGGTAGAGCATGGGACTCTTAATCCCAGG----------------------------------------------------------     SRR7971417_4524666_1_0.04	Ref:[12,44] Read:[18,49] I: 96.97
+
+------------------------------GCCCGGCTAGCTCAGTCGGTAGAGCATGGGACTCTTAATCTCAGGGTCGTGGGTTCGAGCCCCACGTTGGGCG------------------------------     Hs_tRNA.K.CTT.9
+----------------------------------TAATGACCACTTCGGTAGAGCATGGGACTCTTAATCTCAGGGTCGTGGGTT------------------------------------------------     SRR7971417_1299632_4_0.18	Ref:[16,54] Read:[12,49] I: 100.00
+
+------------------------------GCCTCCTTAGTGCAGTAGGTAGCGCATCAGTCTCAAAATCTGAATGGTCCTGAGTTCAAGCCTCAGAGGGGGCA------------------------------     Hs_tRNA.L.CAA.1
+-----------------------------------------------GGTAGCGCATCAGTCTCAAAATCTGAATGGTCCTGAGTTCAAGCCTCAGA-------------------------------------     SRR7971417_1208923_4_0.18	Ref:[18,67] Read:[1,50] I: 100.00
+
+------------------------------GTCAGGATGGCCGAGTGGTCTAAGGCGCCAGACTCAAGCTAAGCTTCCTCCGCGGTGGGGATTCTGGTCTCCAATGGAGGCGTGGGTTCGAATCCCACTTCTGACA------------------------------     Hs_tRNA.L.CAA.3
+----------------------------------------------------------------------------------------------------CCAATGGAGGCGTGGGTTCGAATCCCACTTCTGACAACAACTATCTTATTC---------------     SRR7971417_4077406_1_0.04	Ref:[71,106] Read:[1,35] I: 100.00
+
+------------------------------GTCAGGATGGCCGAGTGGTCTAAGGCGCCAGACTCAAGCTTGGCTTCCTCGTGTTGAGGATTCTGGTCTCCAATGGAGGCGTGGGTTCGAATCCCACTTCTGACA------------------------------     Hs_tRNA.L.CAA.5
+---------------------------------------------------------------------------------------------------CCAATGGAGGCGTGGGTTCGAATCCCACTTCTGACAACAACTATCTTATTC---------------     SRR7971417_4077406_1_0.04	Ref:[70,105] Read:[1,35] I: 100.00
+------------------------------------------------------------------------------------TGAGGATTCTGGTCTCCAATAGAGGCGTGGGTTCGAATCCCACTTCTGACC------------------------------     SRR7971417_4431182_1_0.04	Ref:[55,104] Read:[1,49] I: 98.00
+
+------------------------------GGTAGCGTGGCCGAGTGGTCTAAGGCGCTGGATTTAGGCTCCAGTCATTTCGATGGCGTGGGTTCGAATCCCACCGCTGCCA------------------------------     Hs_tRNA.L.TAG.2
+---------------------------------------------------------------------------CATTTCGATGGCGTGGGTTCGAATCCCACCGCTGCCACACCTCAGAAGGT-----------------     SRR7971417_1713188_3_0.13	Ref:[46,82] Read:[1,37] I: 100.00
+---------------------------------------------------------------------------CATTTCGATGGCGTGGGTTCGAATCCCACCGCTGCCACCCCTCAGAAGGT-----------------     SRR7971417_4441281_1_0.04	Ref:[46,82] Read:[1,37] I: 100.00
+
+------------------------------AGCAGAGTGGCGCAGCGGAAGCGTGCTGGGCCCATAACCCAGAGGTCGATGGATCGAAACCATCCTCTGCTA------------------------------     Hs_tRNA.M.CAT.1
+---------------------------TAGAGCAGAGTGGCGCAGCGGAAGCGTGCTGGGCCCATAACCCAGAGGGCC------------------------------------------------------     SRR7971417_4646464_1_0.04	Ref:[1,45] Read:[4,47] I: 100.00
+
+------------------------------AGCAGAGTGGCGCAGCGGAAGCGTGCTGGGCCCATAACCCAGAGGTCGATGGATCTAAACCATCCTCTGCTA------------------------------     Hs_tRNA.M.CAT.2
+---------------------------TAGAGCAGAGTGGCGCAGCGGAAGCGTGCTGGGCCCATAACCCAGAGGGCC------------------------------------------------------     SRR7971417_4646464_1_0.04	Ref:[1,45] Read:[4,47] I: 100.00
+
+------------------------------GCCTCGTTAGCGCAGTAGGTAGCGCGTCAGTCTCATAATCTGAAGGTCGTGAGTTCGATCCTCACACGGGGCA------------------------------     Hs_tRNA.M.CAT.9
+---------------------------------------------------TAGCTCCAGTC-CATAATCTGAAGGTCGTGAGTTCGATCCTCACACGGGGCC------------------------------     SRR7971417_0340546_8_0.35	Ref:[28,72] Read:[7,49] I: 97.78
+----------------------------------------------------AGCGCCAGTC-CATAATCTGAAGGTCGTGAGTTCGATCCTCACACGGGGCC------------------------------     SRR7971417_4259773_1_0.04	Ref:[24,72] Read:[2,48] I: 95.92
+
+------------------------------GGCTCGTTGGTCTAGGGGTATGATTCTCGCTTAGGGTGCGAGAGGTCCCGGGTTCAAATCCCGGACGAGCCC------------------------------     Hs_tRNA.P.AGG.2
+-----------------------------------------------GTATGATTCTCGCTTAGGGTGCGAGAGGTCCCGGGTTCAAATCCCGGACG-----------------------------------     SRR7971417_1183412_4_0.18	Ref:[18,67] Read:[1,50] I: 100.00
+
+------------------------------GGCTCGTTGGTCTAGGGGTATGATTCTCGCTTCGGGTGCGAGAGGTCCCGGGTTCAAATCCCGGACGAGCCC------------------------------     Hs_tRNA.P.CGG.1
+-----------------------------------------CTAGGAGTATGATTCTCGCTTCGGGTGCGAGAGGTCCCGGGTTCAAATCC-----------------------------------------     SRR7971417_2564602_2_0.09	Ref:[12,61] Read:[1,50] I: 98.00
+----------------CCCTTGCCGAGAGCGGCTCGTTGGTCTAGGGGTATGATTCTCGCTTCGGGG-----------------------------------------------------------------     SRR7971417_2592487_2_0.09	Ref:[1,36] Read:[15,49] I: 100.00
+
+------------------------------GGCTCGTTGGTCTAGGGGTATGATTCTCGCTTCGGGTGTGAGAGGTCCCGGGTTCAAATCCCGGACGAGCCC------------------------------     Hs_tRNA.P.CGG.2
+----------------CCCTTGCCGAGAGCGGCTCGTTGGTCTAGGGGTATGATTCTCGCTTCGGGG-----------------------------------------------------------------     SRR7971417_2592487_2_0.09	Ref:[1,36] Read:[15,49] I: 100.00
+
+------------------------------GGCTCGTTGGTCTAGGGGTATGATTCTCGCTTTGGGTGCGAGAGGTCCCGGGTTCAAATCCCGGACGAGCCC------------------------------     Hs_tRNA.P.TGG.1
+------------------------------GGCTCGTTGGTCTAGGGGTATGATTCTCGCTTTGGGTGCGAGAGGTCCCG----------------------------------------------------     SRR7971417_2611260_2_0.09	Ref:[1,50] Read:[1,50] I: 100.00
+------------------------------GGCTCGTTGGTCTAGGGGTATGATTCTCGCTTTGGGTGCGCGAGGTCCCG----------------------------------------------------     SRR7971417_3972911_1_0.04	Ref:[1,50] Read:[1,50] I: 98.00
+
+------------------------------GGTTCCATGGTGTAATGGTAAGCACTCTGGACTCTGAATCCAGCGATCCGAGTTCGAGTCTCGGTGGAACCT------------------------------     Hs_tRNA.Q.CTG.3
+-------------------------------------------------------TCTGGACTCTGAATCCAGCGATCCGAGTTCGAGTCTCGGTGGAACCTTCCT--------------------------     SRR7971417_4521041_1_0.04	Ref:[26,72] Read:[1,46] I: 100.00
+
+------------------------------GGTTCCATGGTGTAATGGTGAGCACTCTGGACTCTGAATCCAGCGATCCGAGTTCGAGTCTCGGTGGAACCT------------------------------     Hs_tRNA.Q.CTG.4
+-------------------------------------------------------TCTGGACTCTGAATCCAGCGATCCGAGTTCGAGTCTCGGTGGAACCTTCCT--------------------------     SRR7971417_4521041_1_0.04	Ref:[26,72] Read:[1,46] I: 100.00
+
+------------------------------GGCCCCATGGTGTAATGGTTAGCACTCTGGACTTTGAATCCAGCGATCCGAGTTCAAATCTCGGTGGGACCT------------------------------     Hs_tRNA.Q.TTG.1
+--------------------------------CCCACCAGCAATATGGTTAGCACTCTGGACTTTGAATCCAGCGATCCGAGG-------------------------------------------------     SRR7971417_3670865_1_0.04	Ref:[15,52] Read:[13,49] I: 100.00
+
+------------------------------GGTCCCATGGTGTAATGGTTAGCACTCTGGACTTTGAATCCAGCGATCCGAGTTCAAATCTCGGTGGGACCT------------------------------     Hs_tRNA.Q.TTG.3
+--------------------------------CCCACCAGCAATATGGTTAGCACTCTGGACTTTGAATCCAGCGATCCGAGG-------------------------------------------------     SRR7971417_3670865_1_0.04	Ref:[15,52] Read:[13,49] I: 100.00
+
+------------------------------GACGAGGTGGCCGAGTGGTTAAGGCGATGGACTGCTAATCCATTGTGCTCTGCACACGTGGGTTCGAATCCCATCCTCGTCG------------------------------     Hs_tRNA.S.GCT.1
+---------GTGGACAAACCTGTCACGTAGGACGAGGTGGCCGAGTGGTTAAGGCGATGG----------------------------------------------------------------------------------     SRR7971417_2777528_2_0.09	Ref:[1,29] Read:[22,49] I: 100.00
+--------TGTGGACAAACCTGTCACGTAGGACGAGGTGGCCGAGTGGTTAAGGCGATT-----------------------------------------------------------------------------------     SRR7971417_2955481_2_0.09	Ref:[1,28] Read:[23,49] I: 100.00
+
+------------------------------GACGAGGTGGCCGAGTGGTTAAGGCGATGGACTGCTAATCCATTGTGCTCTGCACGCGTGGGTTCGAATCCCACCCTCGTCG------------------------------     Hs_tRNA.S.GCT.2
+---------GTGGACAAACCTGTCACGTAGGACGAGGTGGCCGAGTGGTTAAGGCGATGG----------------------------------------------------------------------------------     SRR7971417_2777528_2_0.09	Ref:[1,29] Read:[22,49] I: 100.00
+--------TGTGGACAAACCTGTCACGTAGGACGAGGTGGCCGAGTGGTTAAGGCGATT-----------------------------------------------------------------------------------     SRR7971417_2955481_2_0.09	Ref:[1,28] Read:[23,49] I: 100.00
+
+------------------------------GACGAGGTGGCCGAGTGGTTAAGGCGATGGACTGCTAATCCATTGTGCTCTGCACGCGTGGGTTCGAATCCCACCTTCGTCG------------------------------     Hs_tRNA.S.GCT.3
+---------GTGGACAAACCTGTCACGTAGGACGAGGTGGCCGAGTGGTTAAGGCGATGG----------------------------------------------------------------------------------     SRR7971417_2777528_2_0.09	Ref:[1,29] Read:[22,49] I: 100.00
+--------TGTGGACAAACCTGTCACGTAGGACGAGGTGGCCGAGTGGTTAAGGCGATT-----------------------------------------------------------------------------------     SRR7971417_2955481_2_0.09	Ref:[1,28] Read:[23,49] I: 100.00
+
+------------------------------GACGAGGTGGCCGAGTGGTTAAGGCGATGGACTGCTAATCCATTGTGCTCTGCACGCGTGGGTTCGAATCCCATCCTCGTCG------------------------------     Hs_tRNA.S.GCT.4
+-----------------------------------------------------------------------------------ACGCGTGGGTTCGAATCCCATCCTCGTCGGCTCGGCTTTCCCTGCTAACTG--------     SRR7971417_2322663_3_0.13	Ref:[54,82] Read:[1,28] I: 100.00
+---------GTGGACAAACCTGTCACGTAGGACGAGGTGGCCGAGTGGTTAAGGCGATGG----------------------------------------------------------------------------------     SRR7971417_2777528_2_0.09	Ref:[1,29] Read:[22,49] I: 100.00
+--------TGTGGACAAACCTGTCACGTAGGACGAGGTGGCCGAGTGGTTAAGGCGATT-----------------------------------------------------------------------------------     SRR7971417_2955481_2_0.09	Ref:[1,28] Read:[23,49] I: 100.00
+
+------------------------------GACGAGGTGGCCGAGTGGTTAAGGCGATGGACTGCTAATCCATTGTGCTTTGCACGCGTGGGTTCGAATCCCATCCTCGTCG------------------------------     Hs_tRNA.S.GCT.5
+--------------------------------------------------------------GGTTAATCCATTGTGCTTTGCACGCGTGGGTTCGAATCCCATCCTCGTCGG-----------------------------     SRR7971417_1246552_4_0.18	Ref:[36,82] Read:[4,49] I: 100.00
+-----------------------------------------------------------------------------------ACGCGTGGGTTCGAATCCCATCCTCGTCGGCTCGGCTTTCCCTGCTAACTG--------     SRR7971417_2322663_3_0.13	Ref:[54,82] Read:[1,28] I: 100.00
+---------GTGGACAAACCTGTCACGTAGGACGAGGTGGCCGAGTGGTTAAGGCGATGG----------------------------------------------------------------------------------     SRR7971417_2777528_2_0.09	Ref:[1,29] Read:[22,49] I: 100.00
+--------TGTGGACAAACCTGTCACGTAGGACGAGGTGGCCGAGTGGTTAAGGCGATT-----------------------------------------------------------------------------------     SRR7971417_2955481_2_0.09	Ref:[1,28] Read:[23,49] I: 100.00
+
+------------------------------GGAGAGGCCTGGCCGAGTGGTTAAGGCGATGGACTGCTAATCCATTGTGCTCTGCACGCGTGGGTTCGAATCCCATCCTCGTCG------------------------------     Hs_tRNA.S.GCT.6
+-------------------------------------------------------------------------------------ACGCGTGGGTTCGAATCCCATCCTCGTCGGCTCGGCTTTCCCTGCTAACTG--------     SRR7971417_2322663_3_0.13	Ref:[56,84] Read:[1,28] I: 100.00
+
+------------------------------GGCCCTGTGGCTTAGCTGGTCAAAGCGCCTGTCTAGTAAACAGGAGATCCTGGGTTCGAATCCCAGCGGGGCCT------------------------------     Hs_tRNA.T.AGT.1
+-------------------------------------------------------GGCCTGTCTAGTAAACAGGAGATCCTGGGTTCGAATCCCAGCGGGGCCTG-----------------------------     SRR7971417_1582320_4_0.18	Ref:[27,74] Read:[2,49] I: 100.00
+
+------------------------------GGCGCCGTGGCTTAGTTGGTTAAAGCGCCTGTCTAGTAAACAGGAGATCCTGGGTTCGAATCCCAGCGGTGCCT------------------------------     Hs_tRNA.T.AGT.3
+----------------GGGGTCTTTCCGGCGGCGCCGTGGCTTAGTTGGTTAAAGCGCCTGTCTAG--------------------------------------------------------------------     SRR7971417_0954935_5_0.22	Ref:[1,36] Read:[15,50] I: 100.00
+----------------------GTACGGGTGGCGCCGTGGCTTAGTTGGTTAAAGCGCCTGTCTAGTAAACA--------------------------------------------------------------     SRR7971417_2434564_2_0.09	Ref:[1,42] Read:[9,50] I: 100.00
+----------------------GTACGGGTGGCGCCGTGGCTTAGTTGGTTAAAGCGCCTGTCTAGTAAAC---------------------------------------------------------------     SRR7971417_3289785_1_0.04	Ref:[1,41] Read:[9,49] I: 100.00
+
+------------------------------GGCTCCGTGGCTTAGCTGGTTAAAGCGCCTGTCTAGTAAACAGGAGATCCTGGGTTCGAATCCCAGCGGGGCCT------------------------------     Hs_tRNA.T.AGT.5
+-------------------------------------------------------GGCCTGTCTAGTAAACAGGAGATCCTGGGTTCGAATCCCAGCGGGGCCTG-----------------------------     SRR7971417_1582320_4_0.18	Ref:[27,74] Read:[2,49] I: 100.00
+
+------------------------------GGCGCGGTGGCCAAGTGGTAAGGCGTCGGTCTCGTAAACCGAAGATCACGGGTTCGAACCCCGTCCGTGCCT------------------------------     Hs_tRNA.T.CGT.2
+-------------------------------------------CCGCGCCTCGAGCCATCGCTGTAAACCGAAGATCACGGGTTCGAACCCCGG--------------------------------------     SRR7971417_2888550_2_0.09	Ref:[34,63] Read:[21,49] I: 100.00
+
+------------------------------GGCCCTATAGCTCAGGGGTTAGAGCACTGGTCTTGTAAACCAGGGGTCGCGAGTTCAAATCTCGCTGGGGCCT------------------------------     Hs_tRNA.T.TGT.1
+------------------------------------------CAGGGGTTAGAGCACTGGTCTTGTAAACCAGGGGTCGCGAGTTCAAATCT-----------------------------------------     SRR7971417_4302407_1_0.04	Ref:[13,62] Read:[1,50] I: 100.00
+
+------------------------------GGCTCCATAGCTCAGGGGTTAGAGCACTGGTCTTGTAAACCAGGGGTCGCGAGTTCAAATCTCGCTGGGGCCT------------------------------     Hs_tRNA.T.TGT.2
+------------------------------------------CAGGGGTTAGAGCACTGGTCTTGTAAACCAGGGGTCGCGAGTTCAAATCT-----------------------------------------     SRR7971417_4302407_1_0.04	Ref:[13,62] Read:[1,50] I: 100.00
+
+------------------------------GCCCGGATGATCCTCAGTGGTCTGGGGTGCAGGCTTCAAACCTGTAGCTGTCTAGCGACAGAGTGGTTCAATTCCACCTTTCGGGCG------------------------------     Hs_tRNA.U.TCA.1
+---------------------------------------------------------------------------TGCTGTCTAGCGACAGAGTGGTTCAATTCCACCTTTCGGGCGGTAGTAAC----------------------     SRR7971417_2686591_2_0.09	Ref:[47,87] Read:[2,42] I: 100.00
+------------------------------------------CTCAGTGGTCTGGGGTGCAGGCTTCAAACCTGTAGCTGTCTAGCGACAGA-------------------------------------------------------     SRR7971417_3533523_1_0.04	Ref:[13,62] Read:[1,50] I: 100.00
+
+------------------------------GTTTCCGTAGTGTAGTGGTTATCACGTTCGCCTCACACGCGAAAGGTCCCCGGTTCGAAACCGGGCGGAAACA------------------------------     Hs_tRNA.V.CAC.4
+---------------------CACCGCCTGGTTTCCGTAGTGTAGTGGTTATCACGTTCGCCTCACACGCG--------------------------------------------------------------     SRR7971417_2063494_3_0.13	Ref:[1,41] Read:[10,50] I: 100.00
+
+------------------------------GTTTCCGTAGTGTAGTGGTTATCACGTTCGCCTCACACGCGAAAGGTCCCCGGTTCGAAACTGGGCGGAAACA------------------------------     Hs_tRNA.V.CAC.5
+---------------------CACCGCCTGGTTTCCGTAGTGTAGTGGTTATCACGTTCGCCTCACACGCG--------------------------------------------------------------     SRR7971417_2063494_3_0.13	Ref:[1,41] Read:[10,50] I: 100.00
+
+------------------------------GTTTCCGTAGTGTAGTGGTTATCACGTTCGCCTCACACGCGTAAAGGTCCCCGGTTCGAAACCGGGCGGAAACA------------------------------     Hs_tRNA.V.CAC.6
+---------------------CACCGCCTGGTTTCCGTAGTGTAGTGGTTATCACGTTCGCCTCACACGCG---------------------------------------------------------------     SRR7971417_2063494_3_0.13	Ref:[1,41] Read:[10,50] I: 100.00
+
+------------------------------GACCTCGTGGCGCAACGGTAGCGCGTCTGACTCCAGATCAGAAGGCTGCGTGTTCGAATCACGTCGGGGTCA------------------------------     Hs_tRNA.W.CCA.2
+---------------------------------------------------CGCGTCTGACTCCAGATCAGAAGGCTGCGTGTTCGAATCACGTCGGGGGAT------------------------------     SRR7971417_2573809_2_0.09	Ref:[22,69] Read:[1,47] I: 100.00
+
+------------------------------CCTTCGATAGCTCAGTTGGTAGAGCGGAGGACTGTAGTGGATAGGGCGTGGCAATCCTTAGGTCGCTGGTTCGATTCCGGCTCGAAGGA------------------------------     Hs_tRNA.Y.GTA.10
+---------------------------GAGCCTTCGATAGCTCAGTTGGTAGAGCGGAGGACTGTAGTGGATAGGGCC-----------------------------------------------------------------------     SRR7971417_0436393_7_0.31	Ref:[1,47] Read:[4,49] I: 100.00
+----------------------------------------------------------------------------------------TAGGTCGCTGGTTCGATTCCGGCTCGAAGGAAGACGCTGCTGTTTTGGGGG----------     SRR7971417_0762785_6_0.26	Ref:[59,89] Read:[1,30] I: 100.00
+
+------------------------------CCTTCGATAGCTCAGCTGGTAGAGCGGAGGACTGTAGATTGTACAGACATTTGCGGACATCCTTAGGTCGCTGGTTCGATTCCGGCTCGAAGGA------------------------------     Hs_tRNA.Y.GTA.2
+---------------------------------------------------------------------------------------------TAGGTCGCTGGTTCGATTCCGGCTCGAAGGAAGACGCTGCTGTTTTGGGGG----------     SRR7971417_0762785_6_0.26	Ref:[64,94] Read:[1,30] I: 100.00
+
+------------------------------CCTTCGATAGCTCAGCTGGTAGAGCGGAGGACTGTAGCCTGTAGAAACATTTGTGGACATCCTTAGGTCGCTGGTTCGATTCCGGCTCGAAGGA------------------------------     Hs_tRNA.Y.GTA.4
+---------------------------------------------------------------------------------------------TAGGTCGCTGGTTCGATTCCGGCTCGAAGGAAGACGCTGCTGTTTTGGGGG----------     SRR7971417_0762785_6_0.26	Ref:[64,94] Read:[1,30] I: 100.00
+
+------------------------------CCTTCGATAGCTCAGCTGGTAGAGCGGAGGACTGTAGCTACTTCCTCAGCAGGAGACATCCTTAGGTCGCTGGTTCGATTCCGGCTCGAAGGA------------------------------     Hs_tRNA.Y.GTA.5
+--------------------------------------------------------------------------------------------TAGGTCGCTGGTTCGATTCCGGCTCGAAGGAAGACGCTGCTGTTTTGGGGG----------     SRR7971417_0762785_6_0.26	Ref:[63,93] Read:[1,30] I: 100.00
+
+------------------------------CCTTCGATAGCTCAGCTGGTAGAGCGGAGGACTGTAGGCGCGCGCCCGTGGCCATCCTTAGGTCGCTGGTTCGATTCCGGCTCGAAGGA------------------------------     Hs_tRNA.Y.GTA.6
+----------------------------------------------------------------------------------------TAGGTCGCTGGTTCGATTCCGGCTCGAAGGAAGACGCTGCTGTTTTGGGGG----------     SRR7971417_0762785_6_0.26	Ref:[59,89] Read:[1,30] I: 100.00
+
+------------------------------CCTTCGATAGCTCAGCTGGTAGAGCGGAGGACTGTAGTACTTAATGTGTGGTCATCCTTAGGTCGCTGGTTCGATTCCGGCTCGAAGGA------------------------------     Hs_tRNA.Y.GTA.8
+----------------------------------------------------------------------------------------TAGGTCGCTGGTTCGATTCCGGCTCGAAGGAAGACGCTGCTGTTTTGGGGG----------     SRR7971417_0762785_6_0.26	Ref:[59,89] Read:[1,30] I: 100.00
+
