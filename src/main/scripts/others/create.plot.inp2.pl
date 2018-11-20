@@ -1,3 +1,4 @@
+#usage: perl create.plot.inp2.pl /home/anand/Documents/resources/SRR7971417/SRR7971417.AT.COL.tab.txt /home/anand/Documents/resources/SRR7971417.blast.filtered.txt > /home/anand/Documents/resources/test.plot.inp.2.txt
 use strict;
 use warnings;
 use Data::Dumper;
@@ -24,6 +25,7 @@ while (my $blRec=<BL>) {
 	my $qCov= sprintf "%.2f", (100 * ($blTemp[3]/$srrIDs{$blTemp[0]}));
 	#my $qCov= 100 * ($blTemp[3]/$srrIDs{$blTemp[0]});
 	if (defined $srrIDs{$blTemp[0]}){
-		print "$blTemp[0]\t$blTemp[1]\t$blTemp[3]\t$srrIDs{$blTemp[0]}\t$qCov\n";
+		#print "$blTemp[0]\t$blTemp[1]\t$blTemp[3]\t$srrIDs{$blTemp[0]}\t$qCov\n";
+		print "$blTemp[0]\t$blTemp[1]\t$blTemp[2]\t$qCov\n";
 		}
 	}
