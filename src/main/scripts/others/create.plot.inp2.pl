@@ -19,6 +19,7 @@ close SRR;
 #print Dumper(\%srrIDs);
 
 open (BL,"$blast") or die "can't open the blast table\n";
+print "SRR_ID\ttRNA_ID\tIdentity\tQ_Cov\n";
 while (my $blRec=<BL>) {
 	chomp $blRec;
 	my @blTemp= split (/\t/,$blRec);
