@@ -45,7 +45,8 @@ while (my $blRec=<BL>) {
 	chomp $blRec;
 	my ($seqMod,$qseqMod)= ();
 	#my ($qseqid,$sseqid,$pident,$length,$mismatch,$gapopen,$qstart,$qend,$sstart,$send,$evalue,$bitscore,$qseq,$sseq,$qframe,$frames,$btop,$sstrand)= split(/\t/,$blRec);
-	my ($sseqid,$qseqid,$pident,$length,$mismatch,$gapopen,$qstart,$qend,$sstart,$send,$biitscore,$qseq,$sseq)= split(/\t/,$blRec);
+	#my $val="$qseqid|$evalue|$pident|$length|$nident|$qlen|$qstart|$qend|$sstart|$send|$bitscore|$qseq|$sseq";
+	my ($sseqid,$qseqid,$pident,$length,$nident,$qlen,$qstart,$qend,$sstart,$send,$biitscore,$qseq,$sseq)= split(/\t/,$blRec);
 	if ($sstart > $send) {
 		$seqMod= reverse $subHeaderMap{$sseqid};
 		$seqMod=~ tr/ACGTacgt/TGCAtgca/;

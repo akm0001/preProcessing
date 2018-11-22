@@ -15,14 +15,21 @@ if ((!$inp) || (!-e $inp)|| (!$fileID) || (!$outDir)) {
 my (%sraID,%unique,%blastnMap)=();
 
 open (RES,"$inp") or die "\n#### [ERROR]\t",scalar(localtime()),"\tCan't open the blast output file $inp\n";
+open (BLAST,">$outDir/$fileID.blast.out.mod.txt") or die "\n#### [ERROR]\t",scalar(localtime()),"\tCan't write to $outDir\n";
+print BLAST "qseqid\tqstart\tqend\tlength\tnident\tqlen\tqseq\tsseqid\tsstart\tsend\tslen\tsstrand\tsseq\tpident\tbitscore\tevalue\n";
 while (my $res=<RES>){
 	chomp $res;
 	#my ($qseqid,$sseqid,$pident,$length,$mismatch,$gapopen,$qstart,$qend,$sstart,$send,$evalue,$bitscore)= split (/\t/,$res);
-	my ($qseqid,$sseqid,$pident,$length,$mismatch,$gapopen,$qstart,$qend,$sstart,$send,$evalue,$bitscore,$qseq,$sseq,$qframe,$sframe,$btop,$sstrand) = split(/\t/,$res);
+	#my ($qseqid,$sseqid,$pident,$length,$mismatch,$gapopen,$qstart,$qend,$sstart,$send,$evalue,$bitscore,$qseq,$sseq,$qframe,$sframe,$btop,$sstrand) = split(/\t/,$res);
+	# qseqid qstart qend length nident qlen qseq sseqid sstart send slen sstrand sseq pident bitscore evalue #preferred blast ouput
+	my ($qseqid,$qstart,$qend,$length,$nident,$qlen,$qseq,$sseqid,$sstart,$send,$slen,$sstrand,$sseq,$pident,$bitscore,$evalue) = split(/\t/,$res);
+	if ($sstrand eq "minus") {$sstrand= "-";}
+	if ($sstrand eq "plus") {$sstrand= "+";}
+	print BLAST "$qseqid\t$qstart\t$qend\t$length\t$nident\t$qlen\t$qseq\t$sseqid\t$sstart\t$send\t$slen\t$sstrand\t$sseq\t$pident\t$bitscore\t$evalue\n";
 	#my $scientific_notation = "$evalue";
 	#my $decimal_notation = sprintf("%.20f", $scientific_notation);
 	#my $val="$qseqid|$decimal_notation";
-	my $val="$qseqid|$evalue|$pident|$length|$mismatch|$gapopen|$qstart|$qend|$sstart|$send|$bitscore|$qseq|$sseq";
+	my $val="$qseqid|$evalue|$pident|$length|$nident|$qlen|$qstart|$qend|$sstart|$send|$bitscore|$qseq|$sseq";
 	my $key="$sseqid";
 	my $blastnKey="$qseqid|$sseqid|$evalue";
 	my $blastnVal="$res";
