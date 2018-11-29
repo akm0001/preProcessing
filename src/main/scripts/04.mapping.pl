@@ -34,7 +34,7 @@ while (my $qrRec= <QR>) {
 close QR;
 #print Dumper(\%queryHeaderMap);
 
-my $resultFile="$outDir/readMapping.temp.txt";
+#my $resultFile="$outDir/readMapping.temp.txt";
 ##open(OUT,">$resultFile") or die "#### [ERROR]\t",scalar(localtime()),"\tCan't write to $resultFile\n";
 
 open(BL,$blastRes) or die "#### [ERROR]\t",scalar(localtime()),"\tCan't open the blast results table $blastRes\n";
@@ -46,7 +46,9 @@ while (my $blRec=<BL>) {
 	my ($seqMod,$qseqMod)= ();
 	#my ($qseqid,$sseqid,$pident,$length,$mismatch,$gapopen,$qstart,$qend,$sstart,$send,$evalue,$bitscore,$qseq,$sseq,$qframe,$frames,$btop,$sstrand)= split(/\t/,$blRec);
 	#my $val="$qseqid|$evalue|$pident|$length|$nident|$qlen|$qstart|$qend|$sstart|$send|$bitscore|$qseq|$sseq";
-	my ($sseqid,$qseqid,$pident,$length,$nident,$qlen,$qstart,$qend,$sstart,$send,$biitscore,$qseq,$sseq)= split(/\t/,$blRec);
+	#my ($sseqid,$qseqid,$pident,$length,$nident,$qlen,$qstart,$qend,$sstart,$send,$biitscore,$qseq,$sseq)= split(/\t/,$blRec);
+	my ($sseqid,$qseqid,$pident,$length,$nident,$qlen,$qstart,$qend,$sstart,$send,$biitscore,$sstrand,$qseq,$sseq,$evalue)= split(/\t/,$blRec);
+	if ($sstrand eq "-") { next; }
 	if ($sstart > $send) {
 		$seqMod= reverse $subHeaderMap{$sseqid};
 		$seqMod=~ tr/ACGTacgt/TGCAtgca/;
@@ -58,9 +60,9 @@ while (my $blRec=<BL>) {
 	my @qseqArr= split(/\|/,$queryHeaderMap{$qseqid});
 	for(my $i=0;$i<=$#qseqArr;$i++) {
 		my $loc = index($qseqArr[$i],$qseq);
-		if($qseqArr[$i]=~ /$qseq/){
+		#if($qseqArr[$i]=~ /$qseq/){
 			$qseqMod=$qseqArr[$i];
-			}
+		#	}
 		if ($loc > 1) {$qseqMod=$qseqArr[$i];}
 		}
 	#print "$qseqid\n$sseqid\nQry--$queryHeaderMap{$qseqid}\nQmo--$qseqMod\nseq--$qseq\nSub--$subHeaderMap{$sseqid}\nRev--$seqMod\n\n";
@@ -98,7 +100,7 @@ while (my $blRec=<BL>) {
 	my $queryCovSubSeq= sprintf "%.2f", (100* ($sModEnd-$sModStart)/$subSeqLen);
 	#"$qseqMod\t[$qstart-$qend]\t$qseqid\n$qP1-$qMa-$qP2\n$qseq\n$seqMod\t[$sstart-$send][$sModStart-$sModEnd]\t$sseqid\n$sP1-$sMa-$sP2\n$sseq\n\n";
 	#print "$qP1*$qMa*$qP2\t[$qstart-$qend]\t$qseqid\n$sP1*$sseq*$sP2\t[$sModStart-$sModEnd]\t$sseqid\n\n";
-	my $tempStr="$qseqid|$qstart|$qend\t$qP1*$qMa*$qP2\t$sseqid|$sModStart|$sModEnd|$pident|$queryCovSubSeq\t$sP1*$sseq*$sP2";
+	my $tempStr="$qseqid|$qstart|$qend\t$qP1*$qMa*$qP2\t$sseqid|$sModStart|$sModEnd|$pident|$queryCovSubSeq|$sstrand\t$sP1*$sseq*$sP2";
 	$tempMap{$tempStr}=$tempStr;
 	##print OUT "$qseqid|$qstart|$qend\t$qP1*$qMa*$qP2\n$sseqid|$sModStart|$sModEnd\t$sP1*$sseq*$sP2\n\n";
 	#if (exists $tempMap{$qseqid}){$tempMap{$qseqid}=$tempMap{$qseqid}."#".$tempStr;}

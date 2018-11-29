@@ -29,7 +29,7 @@ while (my $res=<RES>){
 	#my $scientific_notation = "$evalue";
 	#my $decimal_notation = sprintf("%.20f", $scientific_notation);
 	#my $val="$qseqid|$decimal_notation";
-	my $val="$qseqid|$evalue|$pident|$length|$nident|$qlen|$qstart|$qend|$sstart|$send|$bitscore|$qseq|$sseq";
+	my $val="$qseqid|$evalue|$pident|$length|$nident|$qlen|$qstart|$qend|$sstart|$send|$bitscore|$sstrand|$qseq|$sseq";
 	my $key="$sseqid";
 	my $blastnKey="$qseqid|$sseqid|$evalue";
 	my $blastnVal="$res";
@@ -51,7 +51,7 @@ foreach my $key (sort keys %sraID){
 	my @vals= split (/\,/, $sraID{$key});
 	my (@tRNA,@evals,@res)= ();
 	for (my $i=0;$i<=$#vals;$i++){
-		my ($id,$val) =split(/\|/,$vals[$i]);
+		my ($id,$val,$info) =split(/\|/,$vals[$i]);
 		push @tRNA,$id;
 		push @evals,$val;
 		}
