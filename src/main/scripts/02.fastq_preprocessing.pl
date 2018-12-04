@@ -20,7 +20,7 @@ my $trimmedCollapsedReHead="$outDir/$sra_acc/$sra_acc.AT.COL.fa";
 my $trimmedCollapsedReHeadTable="$outDir/$sra_acc/$sra_acc.AT.COL.tab.txt";
 
 my $createWD="mkdir -p $outDir/$sra_acc";
-my $exec_fastqDump="$fastq_dump $sra_acc -O $outDir/$sra_acc";
+#my $exec_fastqDump="$fastq_dump $sra_acc -O $outDir/$sra_acc";
 my $exec_trimmomatic="java -jar $trimmomatic SE -phred33 $outDir/$sra_acc/$sra_acc.fastq $trimmedFastq ILLUMINACLIP:$adapters:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25";
 my $exec_fastx="fastx_collapser -v -i $trimmedFastq -o $trimmedCollapsedTemp";
 my $exec_faFormat="fasta_formatter -i $trimmedCollapsedReHead -t -o $trimmedCollapsedReHeadTable";
@@ -28,8 +28,14 @@ my $exec_faFormat="fasta_formatter -i $trimmedCollapsedReHead -t -o $trimmedColl
 print "#### [INFO]\t",scalar(localtime()),"\tProcessing $sra_acc\n\n";
 system("$createWD");
 
-print "#### [INFO]\t",scalar(localtime()),"\tDownloading FASTQ file\t$exec_fastqDump\n\n";
-system("$exec_fastqDump");
+print "#### [INFO]\t",scalar(localtime()),"\tDownloading FASTQ file\n\n";
+#system("$exec_fastqDump");
+my $retSRA= fetchSRA($sra_acc,"$outDir/$sra_acc");
+if($retSRA == 0) {
+	print "#### [ERROR]\t",scalar(localtime()),"\tCan't download the $sra_acc\n";
+	exit;
+	}
+
 
 print "\n#### [INFO]\t",scalar(localtime()),"\tStarting adapter removal\t$exec_trimmomatic\n\n";
 system("$exec_trimmomatic");
@@ -77,3 +83,18 @@ else {
 	print "\n#### [ERROR]\t",scalar(localtime()),"\tNo output generated from fastx_collapser\n";
 	}
 
+sub fetchSRA {
+	my ($id,$outPath)= @_;
+	my $idPre=substr($id,0,6);
+	my $fetchComm="wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/$idPre/$id/$id.sra -P $outPath/";
+	my $dumpComm="$fastq_dump $outPath/$id.sra -O $outPath/";
+	system("$fetchComm");
+	system("$dumpComm");
+	system("rm $outPath/$id.sra");
+	if (-s "$outPath/$id.fastq"){
+		return 1;
+		}
+	else {
+		return 0;
+		}
+	}
