@@ -83,6 +83,12 @@ else {
 	print "\n#### [ERROR]\t",scalar(localtime()),"\tNo output generated from fastx_collapser\n";
 	}
 
+my $zipComm="bgzip $outDir/$sra_acc/$sra_acc.fastq";
+system("$zipComm");
+
+my $remATfastqComm="rm $outDir/$sra_acc/$sra_acc.AT.fastq";
+system("$remATfastqComm");
+
 sub fetchSRA {
 	my ($id,$outPath)= @_;
 	my $idPre=substr($id,0,6);
